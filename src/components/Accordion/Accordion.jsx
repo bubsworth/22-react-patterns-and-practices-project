@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from "react";
 
-import AccordionItem from "./AccordionItem";
-import AccordionTitle from "./AccordionTitle";
-import AccordionContent from "./AccordionContent";
+import AccordionItem from "./AccordionItem.jsx";
+import AccordionTitle from "./AccordionTitle.jsx";
+import AccordionContent from "./AccordionContent.jsx";
 
 const AccordionContext = createContext();
 
@@ -11,7 +11,7 @@ export function useAccordionContext() {
 
   if (!ctx) {
     throw new Error(
-      "Accordion-related component must be wrapped by <Accordion/>",
+      "Accordion-related components must be wrapped by <Accordion>.",
     );
   }
 

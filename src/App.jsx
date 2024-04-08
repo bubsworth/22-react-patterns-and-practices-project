@@ -1,11 +1,11 @@
-import Accordion from "./components/Accordion/Accordion";
-import SearchableList from "./components/SearchableList/SearchableList";
+import Accordion from "./components/Accordion/Accordion.jsx";
+import SearchableList from "./components/SearchableList/SearchableList.jsx";
 import savannaImg from "./assets/african-savanna.jpg";
 import amazonImg from "./assets/amazon-river.jpg";
 import caribbeanImg from "./assets/caribbean-beach.jpg";
 import desertImg from "./assets/desert-dunes.jpg";
 import forestImg from "./assets/forest-waterfall.jpg";
-import Place from "./Place";
+import Place from "./Place.jsx";
 
 const PLACES = [
   {
@@ -45,30 +45,31 @@ function App() {
     <main>
       <section>
         <h2>Why work with us?</h2>
-        <Accordion id="experience" className="accordion">
-          <Accordion.Item className="accordion-item">
-            <Accordion.Title className="accordion-item-title" id="experience">
-              We got 20 years experience
+
+        <Accordion className="accordion">
+          <Accordion.Item id="experience" className="accordion-item">
+            <Accordion.Title className="accordion-item-title">
+              We got 20 years of experience
             </Accordion.Title>
             <Accordion.Content className="accordion-item-content">
               <article>
                 <p>You can&apos;t go wrong with us.</p>
                 <p>
-                  We are in the business of planning highly individualised
-                  vaction trips for more han 20 years.
+                  We are in the business of planning highly individualized
+                  vacation trips for more than 20 years.
                 </p>
               </article>
             </Accordion.Content>
           </Accordion.Item>
           <Accordion.Item id="local-guides" className="accordion-item">
             <Accordion.Title className="accordion-item-title">
-              We're working with local guides
+              We are working with local guides
             </Accordion.Title>
             <Accordion.Content className="accordion-item-content">
               <article>
                 <p>We are not doing this along from our office.</p>
                 <p>
-                  Instead we are working with local guides to ensure a safe and
+                  Instead, we are working with local guides to ensure a safe and
                   pleasant vacation.
                 </p>
               </article>
